@@ -1,7 +1,7 @@
-{
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*","./Styles/Global.js"]
-    }
-  }
-}
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./src/*","./Styles/Global.js"]
+//     }
+//   }
+// }
