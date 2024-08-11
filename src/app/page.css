@@ -1,0 +1,100 @@
+.outermost{
+    /* background-color: #136013; */
+    color :white;
+    width: 1250px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    
+}
+.outermost-2{
+    width: 1150px;
+    height: 90vh;
+    background-color: #092c09;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(13, 81, 13), rgb(0, 0, 0));
+    border-radius: 15px;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    
+    width: 45%;
+    
+    height: 90%;
+   
+}
+.right{
+    
+    width: 40%;
+    height: 90%;
+    border-radius: 15px;
+    display: flex;
+    
+    
+    
+}
+.upper-left{
+  margin-left: 10px; 
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 70px;
+    
+}
+.button{
+    height: 35px;
+    font-weight: 600;
+    border-radius: 15px;
+    width: 53%;
+    margin-top: 15px;
+    background-color: rgb(54, 208, 67);
+    color:white;
+}
+.button:hover{
+    height: 35px;
+    font-weight: 600;
+    border-radius: 15px;
+    width: 53%;
+    margin-top: 15px;
+    background-color: rgb(54, 208, 67);
+    color:white;
+    cursor: pointer;
+}
+.sig-log:hover{
+    cursor: pointer;
+}
+.quote{
+    margin-top: 60px;
+}
+.card{
+    margin-left: 40px;
+
+}
+.card-2{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 170px;
+    width: 95%;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.card-2-text{
+    font:bold;
+    margin-left: 15px;
+    
+    font-weight: 600;
+}
+.card-2-text-2{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.input-field{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 250px;
+}
