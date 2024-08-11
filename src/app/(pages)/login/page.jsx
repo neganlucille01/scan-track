@@ -1,20 +1,21 @@
-
-import { useNavigate } from 'react-router-dom';
+"use client"
 import './page.css'
-
 import React, { useState } from 'react';
-import { primaryBg, secondaryBg } from '../../Styles/Global';
+import { primaryBg, secondaryBg } from '../../../../Styles/Global';
+import { useRouter } from 'next/navigation';
 
 const Login = () => {
+    const router = useRouter()
     const [isLogin, setIsLogin] = useState(true);
-    const navigate=useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
     const [username, setUsername] = useState('');
 
     const loginSignupHandler = async (e) => {
-        navigate('/Dashboard');
+        console.log("clicked")
+        let variable = 2
+        router.push(`/dashboard/${variable}`)
     };
 
     return (
@@ -24,7 +25,7 @@ const Login = () => {
                     <div className="upper-left">Hello, How are you doing today?</div>
                     <div className="input">
                         <h1>{isLogin ? 'Login' : 'Signup'}</h1>
-                        <form onSubmit={loginSignupHandler}>
+                        
                             {!isLogin && (
                                 <>
                                     <input
@@ -57,7 +58,7 @@ const Login = () => {
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
-                            <button className="button" type="submit">
+                            <button className="button" onClick={loginSignupHandler}>
                                 {isLogin ? 'Sign in' : 'Create Account'}
                             </button>
                             <h3 className="acc">
@@ -66,7 +67,7 @@ const Login = () => {
                                     {isLogin ? 'Signup' : 'Login'}
                                 </span>
                             </h3>
-                        </form>
+                       
                     </div>
                 </div>
                 <div style={{backgroundColor:secondaryBg}}className="right">
